@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>This is a Bookshelf!</title>
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    </head>
+
+
+    <body>
+        <div class="col-md-1">
+            <form method="post" action="api/Books.php">
+                <label>
+                    Add a new book!
+                </label>
+                <br/>
+                <label>
+                    Author:<input name="author" id="author"></input>
+                </label>
+                <br/>
+                <label>
+                    Name: <input name="name" id="name"></input>
+                </label>
+                <br/>
+                <label>
+                    Description: <textarea rows="10" cols="21" name="description" id="description" type="textarea"></textarea>
+                </label>
+                </br>
+                <!--<button id="refreshButton">Click</button>-->
+                <input id='submit' name='submit' type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-6 container">
+
+
+        <ul id="listWithBooks"></ul>
+        </div>
+        <script src="js/app.js"></script>
+    </body>
+</html>
